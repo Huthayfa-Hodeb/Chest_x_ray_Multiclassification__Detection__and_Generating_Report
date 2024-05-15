@@ -28,20 +28,21 @@ def predict(image):
 
     results = model_det([image])
     result = results[0]
-    data = json.loads(result.tojson())
-
-    if data:
-        image_det = result.plot()
     
-        report_text = tokenizer.decode(model_report.generate(feature_extractor(image, return_tensors="pt").pixel_values.to(device), temperature = 1, max_length = 100)[0])
+    if result:
+        data = json.loads(result.tojson())
 
+        image_det = result.plot()
+        
+        report_text = tokenizer.decode(model_report.generate(feature_extractor(image, return_tensors="pt").pixel_values.to(device), temperature = 1, max_length = 100)[0])
+        
         return image_det, report_text.replace("<|endoftext|>", "")
 
     else:
-        cv2.rectangle(image, (0, image.shape[0] - 100), (300, image.shape[0]), (255, 255, 255), -1)
-        cv2.putText(image, "Clean bill of health", (10, image.shape[0] - 20), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 0, 0), 2, cv2.LINE_AA)
-
-        return image, "Clean bill of health"
+            cv2.rectangle(image, (0, image.shape[0] - 50), (image.shape[1], image.shape[0]), (182, 229, 227), -1)
+            cv2.putText(image, "The tests showed that there are no tumors.", (180, image.shape[0] - 20), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 0, 0), 2, cv2.LINE_AA)
+    
+            return image, "The tests showed that there are no tumors."
 
 
 # Create a Gradio interface
