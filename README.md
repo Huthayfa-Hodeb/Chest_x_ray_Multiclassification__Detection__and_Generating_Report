@@ -16,7 +16,7 @@ For NIH, you can download the dataset from [here](https://drive.google.com/file/
 
 For NIH, in RT-DETR model format you can download the dataset from [here](https://drive.google.com/file/d/1LtMebJa8SWne_0d7cAV8Uyg2nQdgZk-q/view?usp=sharing)
 
-For MIMIC-CXR, you can download the dataset from [here](http://example.com](https://huggingface.co/datasets/hongrui/mimic_chest_xray_v_1))
+For MIMIC-CXR, you can download the dataset from [here](https://huggingface.co/datasets/hongrui/mimic_chest_xray_v_1)
 
 # Codes
 
