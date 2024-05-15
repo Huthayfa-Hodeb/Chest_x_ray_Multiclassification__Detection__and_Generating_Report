@@ -6,7 +6,7 @@ This is the implementation of RT-DETR model and VIT-GPT2.
 
 # Download RT-DETR model Or VIT-GPT2
 
-You can download the models we trained for each dataset from the following links and put them in `model folder`:
+You can download the models we trained for each dataset from the following links :
 - [RT-DETR](https://drive.google.com/file/d/1LtnZ52JKhEuOYGLxhamAxKNVftV1N8xe/view?usp=sharing).
 - [VIT-GPT2](https://drive.google.com/file/d/14ooNq_5hDDvNlPTJtqMW06AbRr9Hc3fR/view?usp=sharing).
 
