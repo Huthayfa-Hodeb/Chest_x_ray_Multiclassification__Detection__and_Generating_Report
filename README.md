@@ -3,6 +3,13 @@
 This is the implementation of RT-DETR model and VIT-GPT2.
 
 # Requirements
+- `gradio==4.31.2`
+- `opencv-python==4.8.0.74`
+- `transformers==4.40.2`
+- `torch==2.2.2`
+- `torchvision==0.17.2`
+- `ultralytics==8.2.2`
+- `roboflow`
 
 # Download RT-DETR model Or VIT-GPT2
 
@@ -25,3 +32,6 @@ For `MIMIC-CXR`, you can download the dataset from [here](https://huggingface.co
 - [chest detection model](./chest-detection-model.ipynb) : in this file we create the tumor detection model (`RT-DETR`).
 - [final model](./final_model.ipynb) : in this file you can use `RT-DETR model` to make inferences.
 - [image captioning](./image-captioning.ipynb) : in this file we create the report generating model (`VIT-GPT2`).
+- [app](./app.py) : in this file you can run the gradio app and use two models to make inferences.
+  
+  Note: Before run app.py make sure to download two models and put theme in [model](./model) folder.
