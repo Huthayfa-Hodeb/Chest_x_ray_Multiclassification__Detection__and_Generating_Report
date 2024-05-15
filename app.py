@@ -40,9 +40,9 @@ def predict(image):
 
     else:
             cv2.rectangle(image, (0, image.shape[0] - 50), (image.shape[1], image.shape[0]), (182, 229, 227), -1)
-            cv2.putText(image, "The tests showed that there are no tumors.", (180, image.shape[0] - 20), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 0, 0), 2, cv2.LINE_AA)
+            cv2.putText(image, "Clean bill of health.", (180, image.shape[0] - 20), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 0, 0), 2, cv2.LINE_AA)
     
-            return image, "The tests showed that there are no tumors."
+            return image, "Clean bill of health."
 
 
 # Create a Gradio interface
