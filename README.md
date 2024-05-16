@@ -1,4 +1,4 @@
-# Chest x-ray Multiclassification, Detection and Generating_Report
+# Dr.Diagnostic : Chest x-ray Multiclassification, Detection and Generating_Report
 
 This is the implementation of RT-DETR model and VIT-GPT2.
 
